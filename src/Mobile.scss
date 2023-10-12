@@ -1,15 +1,42 @@
 @media only screen and (min-device-width: 220px) and (max-device-width: 767px) {
-    .card{
-        width: 100vw;
-        height: 100vh;
-        border-radius: unset;
-        img{
-            height:100%;
+  .card-wrapper {
+    padding: $xh 0;
+    flex-flow: column nowrap;
+    row-gap: $l;
+  }
+  .card {
+    transform: none;
+    width: 100vw;
+    height: 100vh;
+    border-radius: unset;
+    img {
+      height: 100%;
+      clip-path: polygon(0 0, 85% 0, 85% 100%, 0% 100%);
+    }
+    span {
+      &:first-of-type {
+        font: {
+          size: $xxl;
         }
-        span{
-            font:{
-                size: 50px;
-            }
+      }
+      &:last-of-type{
+        font:{
+            size: $xxl;
+        }
+      }
+    }
+  }
+  h1 {
+    position: static;
+    flex-flow: column wrap;
+    align-items: center;
+    row-gap:$m;
+    // transform: rotate(-90deg);
+    writing-mode: horizontal-tb;
+    span{
+        &:first-of-type{
+            writing-mode: vertical-rl;
         }
     }
+  }
 }

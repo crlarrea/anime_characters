@@ -14,7 +14,6 @@ export const Home = () => {
         meta: payload.meta,
         links: payload.links,
       });
-      console.log(animeData);
     } catch (error) {
       console.log(error);
     }
@@ -41,9 +40,19 @@ export const Home = () => {
   return (
     animeData.data.length > 1 && (
       <section className="card-wrapper">
+        <h1>
+          anime <span>アニメ</span>
+          
+          <span> &copy; {new Date().getFullYear()} <a href="https://crlarrea.github.io" target="_blank">
+            crlarrea
+          </a>
+          </span>
+        </h1>
+
         {animeData.data.map((entry) => {
           return <Card props={entry} key={`character-${entry.id}`} />;
         })}
+        
       </section>
     )
   );
