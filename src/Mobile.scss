@@ -19,9 +19,9 @@
           size: $xxl;
         }
       }
-      &:last-of-type{
-        font:{
-            size: $xxl;
+      &:last-of-type {
+        font: {
+          size: $xxl;
         }
       }
     }
@@ -30,25 +30,25 @@
     position: static;
     flex-flow: column wrap;
     align-items: center;
-    row-gap:$m;
+    row-gap: $m;
     // transform: rotate(-90deg);
     writing-mode: horizontal-tb;
-    span{
-        &:first-of-type{
-            writing-mode: vertical-rl;
-        }
+    span {
+      &:first-of-type {
+        writing-mode: vertical-rl;
+      }
     }
   }
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-    .card-wrapper {
-        padding: $xh $xh;
-    }
+  .card-wrapper {
+    padding: $xh $xh;
+  }
 
-    .card{
-        img{
-            width:250px;
-        }
+  .card {
+    img {
+      width: 250px;
     }
+  }
 }
