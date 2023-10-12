@@ -11,7 +11,7 @@ export const Card = ({
 }) => {
   return (
     <article className="card">
-      <img src={original} />
+      <img src={original} loading="lazy"/>
       <span>{en}</span>
       <span>{ja_jp}</span>
       {/* <p>{description}</p> */}
