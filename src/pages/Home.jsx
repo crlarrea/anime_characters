@@ -23,6 +23,7 @@ export const Home = () => {
 
   useEffect(() => {
     getAnimeData();
+    setBottomPage(true);
   }, []);
 
   useEffect(() => {
