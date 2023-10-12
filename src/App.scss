@@ -1,9 +1,90 @@
- *{
-    padding: 0;
-    margin:0;
-    box-sizing: border-box;
- }
+@import 'UISystem';
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
- body{
-    // background-color: red;
- }
+
+body {
+  font:{
+   family: 'Gabarito';
+  }
+}
+
+
+.card-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.card {
+   overflow: hidden;
+   border-top-right-radius: 10%;
+  transition: all 0.3s;
+  position: relative;
+  cursor: pointer;
+  background-color: rgb(49, 49, 202);
+  display: flex;
+  margin : {
+    right: -5%;
+  }
+  p{
+   display: none;
+  }
+
+  &:hover {
+    margin: {
+      right: 0;
+    }
+    img {
+      filter: none;
+    }
+    p{
+      display: inline-flex;
+      padding: 50px;
+      color:white;
+    }
+  }
+  
+
+  span {
+    position: absolute;
+    &:first-of-type {
+      // writing-mode:vertical-lr;
+      
+
+      left: 10px;
+      bottom: 10px;
+      max-width: 20ch;
+
+      font: {
+        size: 34px;
+      }
+      max-width: 10ch;
+    }
+
+    &:last-of-type {
+      right: 10px;
+      writing-mode: vertical-rl;
+      font:{
+         family: 'Noto Sans JP';
+         weight: bold;
+      }
+      ;
+    }
+    bottom: 10px;
+
+    color: white;
+  }
+
+  img {
+    clip-path: polygon(0 0, 100% 0, 75% 100%, 0% 100%);
+    height: 50vh;
+    filter: grayscale(0.8) opacity(0.7);
+    
+    ;
+  }
+}
+
+@import 'Mobile.scss';

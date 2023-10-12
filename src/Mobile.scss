@@ -1,0 +1,15 @@
+@media only screen and (min-device-width: 220px) and (max-device-width: 767px) {
+    .card{
+        width: 100vw;
+        height: 100vh;
+        border-radius: unset;
+        img{
+            height:100%;
+        }
+        span{
+            font:{
+                size: 50px;
+            }
+        }
+    }
+}

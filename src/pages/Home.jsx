@@ -15,7 +15,12 @@ export const Home = () => {
   }, []);
 
   return(animeData.length > 1 &&
-    animeData.map((entry) => {
-      return <Card props={entry} />;
-    }))
+    
+    <section className='card-wrapper'>
+    {animeData.map((entry) => {
+      return <Card props={entry} key={`character-${entry.id}`}/>;
+    })}
+    
+    </section>
+    )
 };
