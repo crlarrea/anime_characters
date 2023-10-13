@@ -2,12 +2,18 @@
   .card-wrapper {
     padding: $xh 0;
     flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    // align-items: center;
     row-gap: $l;
+    
   }
   .card {
     transform: none;
-    width: 100vw;
-    height: 100vh;
+    width: 80vw;
+    margin:0;
+    
+    // height: 80vh;
     border-radius: unset;
     img {
       height: 100%;
