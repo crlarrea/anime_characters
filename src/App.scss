@@ -15,7 +15,7 @@ body {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  padding: $h calc(5 * #{$xh});
+  padding: $h calc(3 * #{$xh});
   position: relative;
 }
 

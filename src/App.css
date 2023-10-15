@@ -20,7 +20,7 @@ body {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  padding: 48px calc(5 * 72px);
+  padding: 48px calc(3 * 72px);
   position: relative;
 }
 
